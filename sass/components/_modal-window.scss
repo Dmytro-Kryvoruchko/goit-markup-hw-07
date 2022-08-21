@@ -37,15 +37,15 @@
   border: 1px solid var(--main-fill-color);
   border-radius: 50%;
   transition: border-color var(--transition);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-close-btn-icon {
   transition: fill var(--transition);
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  border-color: var(--accent-color);
 }
 
 .modal-close-btn:hover .modal-close-btn-icon,

@@ -102,37 +102,6 @@ button {
   color: var(--title-text-color);
 }
 
-.logo-header {
-  margin-right: 92px;
-  font-family: var(--secondary-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: inherit;
-  color: var(--logo-color);
-}
-
-.logo-span {
-  font-family: var(--secondary-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: inherit;
-  color: var(--accent-color);
-}
-
-.logo-footer {
-  font-family: var(--secondary-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: inherit;
-  color: var(--primary-white-color);
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -144,7 +113,6 @@ button {
   -webkit-transition: opacity var(--transition), visibility var(--transition);
   transition: opacity var(--transition), visibility var(--transition);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -200,15 +168,13 @@ button {
   -webkit-transition: border-color var(--transition);
   transition: border-color var(--transition);
 }
+.modal-close-btn:hover, .modal-close-btn:focus {
+  border-color: var(--accent-color);
+}
 
 .modal-close-btn-icon {
   -webkit-transition: fill var(--transition);
   transition: fill var(--transition);
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  border-color: var(--accent-color);
 }
 
 .modal-close-btn:hover .modal-close-btn-icon,
@@ -251,7 +217,6 @@ button {
   -webkit-transition: border-color var(--transition);
   transition: border-color var(--transition);
 }
-
 .modal-form-input:focus {
   border-color: var(--accent-color);
   outline: none;
@@ -296,7 +261,6 @@ button {
   -webkit-transition: border-color var(--transition);
   transition: border-color var(--transition);
 }
-
 .modal-form-textarea:focus {
   border-color: var(--accent-color);
   outline: none;
@@ -304,34 +268,6 @@ button {
 
 .modal-form-field-textarea {
   margin-bottom: 20px;
-}
-
-.modal-form-check-desc::before {
-  display: block;
-  content: "";
-  margin-right: 7px;
-  width: 16px;
-  height: 16px;
-  border-radius: 4px;
-  background-image: url(/images/for-sprite/submit-window.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  -webkit-transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition);
-  transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition);
-}
-
-.modal-form-check:checked + .modal-form-check-desc::before {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-image: url(/images/for-sprite/check-birdie.svg);
-}
-
-.modal-form-check:focus + .modal-form-check-desc::before {
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .modal-form-check-desc {
@@ -346,7 +282,6 @@ button {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 30px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -354,6 +289,39 @@ button {
   line-height: 1.71;
   letter-spacing: inherit;
   color: var(--paragraph-text-color);
+}
+.modal-form-check-desc::before {
+  display: block;
+  content: "";
+  margin-right: 7px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/for-sprite/submit-window.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  -webkit-transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), -webkit-box-shadow var(--transition);
+  transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), -webkit-box-shadow var(--transition);
+  transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), box-shadow var(--transition);
+  transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), box-shadow var(--transition), -webkit-box-shadow var(--transition);
+}
+
+.modal-form-check:checked + .modal-form-check-desc::before {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-image: url(../images/for-sprite/check-birdie.svg);
+}
+
+.modal-form-check:focus + .modal-form-check-desc::before {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.check-box-wrapper {
+  margin-bottom: 30px;
 }
 
 .terms-conditions {
@@ -375,11 +343,31 @@ button {
   transition: background-color var(--transition), box-shadow var(--transition);
   transition: background-color var(--transition), box-shadow var(--transition), -webkit-box-shadow var(--transition);
 }
-
 .modal-form-submit:hover, .modal-form-submit:focus {
   background-color: var(--hover-focus-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.logo-header {
+  margin-right: 92px;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: inherit;
+  color: var(--logo-color);
+}
+
+.logo-span {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: inherit;
+  color: var(--accent-color);
 }
 
 .page-header {
@@ -922,6 +910,16 @@ button {
           justify-content: space-between;
 }
 
+.logo-footer {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: inherit;
+  color: var(--primary-white-color);
+}
+
 .address-container {
   margin-right: 70px;
 }
@@ -1082,5 +1080,4 @@ button {
 
 .subscribe-btn {
   margin-right: 10px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -1,3 +1,22 @@
+.logo-header {
+  margin-right: 92px;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: inherit;
+  color: var(--logo-color);
+}
+.logo-span {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: inherit;
+  color: var(--accent-color);
+}
 .page-header {
   border-bottom: 1px solid var(--primary-border-color);
 }
