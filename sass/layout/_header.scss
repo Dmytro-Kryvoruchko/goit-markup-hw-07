@@ -50,11 +50,11 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color var(--transition);
-}
 
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .menu-link.current::after {
@@ -90,11 +90,11 @@
   letter-spacing: 0.02em;
   color: var(--paragraph-text-color);
   transition: color var(--transition);
-}
 
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .icon-mail {
@@ -111,9 +111,9 @@
 
   fill: currentColor;
   transition: fill var(--transition);
-}
 
-.contacts-link:hover .icon-smartphone,
-.contacts-link:focus .icon-smartphone {
-  fill: var(--accent-color);
+  .contacts-link:hover &,
+  .contacts-link:focus & {
+    fill: var(--accent-color);
+  }
 }

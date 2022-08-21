@@ -139,7 +139,6 @@ button {
   transition: transform var(--transition), opacity var(--transition), visibility var(--transition);
   transition: transform var(--transition), opacity var(--transition), visibility var(--transition), -webkit-transform var(--transition);
 }
-
 .backdrop.is-hidden .modal-form {
   opacity: 0;
   visibility: hidden;
@@ -176,9 +175,7 @@ button {
   -webkit-transition: fill var(--transition);
   transition: fill var(--transition);
 }
-
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
+.modal-close-btn:hover .modal-close-btn-icon, .modal-close-btn:focus .modal-close-btn-icon {
   fill: var(--accent-color);
 }
 
@@ -231,7 +228,6 @@ button {
   -webkit-transition: fill var(--transition);
   transition: fill var(--transition);
 }
-
 .modal-form-input:focus + .modal-form-icon {
   fill: var(--accent-color);
 }
@@ -295,7 +291,7 @@ button {
   content: "";
   margin-right: 7px;
   width: 16px;
-  height: 16px;
+  height: 15px;
   background-image: url(../images/for-sprite/submit-window.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -305,7 +301,6 @@ button {
   transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), box-shadow var(--transition);
   transition: border var(--transition), background-image var(--transition), background-color var(--transition), border-color var(--transition), box-shadow var(--transition), -webkit-box-shadow var(--transition);
 }
-
 .modal-form-check:checked + .modal-form-check-desc::before {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
@@ -314,7 +309,6 @@ button {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-image: url(../images/for-sprite/check-birdie.svg);
 }
-
 .modal-form-check:focus + .modal-form-check-desc::before {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -417,9 +411,7 @@ button {
   -webkit-transition: color var(--transition);
   transition: color var(--transition);
 }
-
-.menu-link:hover,
-.menu-link:focus {
+.menu-link:hover, .menu-link:focus {
   color: var(--accent-color);
 }
 
@@ -469,9 +461,7 @@ button {
   -webkit-transition: color var(--transition);
   transition: color var(--transition);
 }
-
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:hover, .contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -494,9 +484,7 @@ button {
   -webkit-transition: fill var(--transition);
   transition: fill var(--transition);
 }
-
-.contacts-link:hover .icon-smartphone,
-.contacts-link:focus .icon-smartphone {
+.contacts-link:hover .icon-smartphone, .contacts-link:focus .icon-smartphone {
   fill: var(--accent-color);
 }
 
@@ -538,9 +526,7 @@ button {
   -webkit-transition: background-color var(--transition);
   transition: background-color var(--transition);
 }
-
-.order-btn:hover,
-.corder-btn:focus {
+.order-btn:hover, .order-btn:focus {
   background-color: var(--hover-focus-color);
 }
 
@@ -716,9 +702,7 @@ button {
   -webkit-transition: background-color var(--transition), color var(--transition);
   transition: background-color var(--transition), color var(--transition);
 }
-
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link:hover, .social-list-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
@@ -759,9 +743,7 @@ button {
   -webkit-transition: color var(--transition), border var(--transition);
   transition: color var(--transition), border var(--transition);
 }
-
-.customers-list-link:hover,
-.customers-list-link:focus {
+.customers-list-link:hover, .customers-list-link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
@@ -800,9 +782,7 @@ button {
   transition: background-color var(--transition), color var(--transition), box-shadow var(--transition);
   transition: background-color var(--transition), color var(--transition), box-shadow var(--transition), -webkit-box-shadow var(--transition);
 }
-
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-btn:hover, .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -829,9 +809,7 @@ button {
   transition: box-shadow var(--transition);
   transition: box-shadow var(--transition), -webkit-box-shadow var(--transition);
 }
-
-.portfolio-card-link:hover,
-.portfolio-card-link:focus {
+.portfolio-card-link:hover, .portfolio-card-link:focus {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -862,9 +840,7 @@ button {
   line-height: 28px;
   letter-spacing: inherit;
 }
-
-.portfolio-card-link:hover .overlay,
-.portfolio-card-link:focus .overlay {
+.portfolio-card-link:hover .overlay, .portfolio-card-link:focus .overlay {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
@@ -949,9 +925,7 @@ button {
   -webkit-transition: color var(--transition);
   transition: color var(--transition);
 }
-
-.contacts-footer-link:hover,
-.contacts-footer-link:focus {
+.contacts-footer-link:hover, .contacts-footer-link:focus {
   color: var(--accent-color);
 }
 
@@ -999,13 +973,10 @@ button {
   transition: background-color var(--transition);
   fill: var(--primary-white-color);
 }
-
-.social-list-link-footer:hover,
-.social-list-link-footer:focus {
+.social-list-link-footer:hover, .social-list-link-footer:focus {
   background-color: var(--accent-color);
 }
 
-/* subscribe */
 .subscribe-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -1036,7 +1007,6 @@ button {
   -webkit-transition: border-color var(--transition);
   transition: border-color var(--transition);
 }
-
 .footer-subscribe-input:focus {
   border-color: var(--accent-color);
   outline: none;
@@ -1070,9 +1040,7 @@ button {
   -webkit-transition: background-color var(--transition);
   transition: background-color var(--transition);
 }
-
-.subscribe-submit-btn:hover,
-.subscribe-submit-btn:focus {
+.subscribe-submit-btn:hover, .subscribe-submit-btn:focus {
   background-color: var(--hover-focus-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

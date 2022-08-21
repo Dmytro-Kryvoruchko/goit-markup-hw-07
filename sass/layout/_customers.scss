@@ -18,12 +18,12 @@
   border-radius: 4px;
   color: var(--main-fill-color);
   transition: color var(--transition), border var(--transition);
-}
 
-.customers-list-link:hover,
-.customers-list-link:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 
 .customers-list-icon {

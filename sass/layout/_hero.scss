@@ -38,9 +38,9 @@
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   transition: background-color var(--transition);
-}
 
-.order-btn:hover,
-.corder-btn:focus {
-  background-color: var(--hover-focus-color);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-focus-color);
+  }
 }

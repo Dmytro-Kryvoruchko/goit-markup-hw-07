@@ -40,9 +40,10 @@
   left: 12px;
   transform: translateY(-50%);
   transition: fill var(--transition);
-}
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
+
+  .modal-form-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form-input-desc {
@@ -97,7 +98,7 @@
     content: "";
     margin-right: 7px;
     width: 16px;
-    height: 16px;
+    height: 15px;
 
     background-image: url(../images/for-sprite/submit-window.svg);
     background-repeat: no-repeat;
@@ -106,20 +107,20 @@
     transition: border var(--transition), background-image var(--transition),
       background-color var(--transition), border-color var(--transition),
       box-shadow var(--transition);
+
+    .modal-form-check:checked + & {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      border-radius: 2px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      background-image: url(../images/for-sprite/check-birdie.svg);
+    }
+    .modal-form-check:focus + & {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
   }
 }
 
-.modal-form-check:checked + .modal-form-check-desc::before {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  border-radius: 2px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-image: url(../images/for-sprite/check-birdie.svg);
-}
-
-.modal-form-check:focus + .modal-form-check-desc::before {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
 .check-box-wrapper {
   margin-bottom: 30px;
 }
