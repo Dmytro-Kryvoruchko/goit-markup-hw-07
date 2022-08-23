@@ -1,4 +1,4 @@
-.logo-header {
+.header__logo {
   margin-right: 92px;
   font-family: var(--secondary-font);
   font-style: normal;
@@ -8,7 +8,7 @@
   letter-spacing: inherit;
   color: var(--logo-color);
 }
-.logo-span {
+.header-nav-logo__span {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
@@ -21,12 +21,12 @@
   border-bottom: 1px solid var(--primary-border-color);
 }
 
-.header-container {
+.page-header-container {
   display: flex;
   align-items: center;
 }
 
-.main-nav {
+.header-nav {
   display: flex;
   align-items: center;
 }
@@ -58,7 +58,7 @@
 }
 
 .menu-link.current::after {
-  content: "";
+  content: '';
   display: block;
   bottom: -1px;
 
@@ -70,6 +70,9 @@
   position: absolute;
 }
 
+.current {
+  color: var(--accent-color);
+}
 .contacts-list {
   display: flex;
   margin-left: auto;

@@ -76,10 +76,6 @@ button {
   font-style: normal;
 }
 
-.current {
-  color: var(--accent-color);
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -424,6 +420,10 @@ button {
   border-radius: 2px;
   background-color: var(--accent-color);
   position: absolute;
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 .contacts-list {
