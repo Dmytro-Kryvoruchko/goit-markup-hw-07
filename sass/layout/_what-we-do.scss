@@ -2,16 +2,16 @@
   padding-top: 0;
 }
 
-.what-we-do-gallery {
+.what-we-do__gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.we-do-item-wrapper {
+.what-we-do__item-wrapper {
   position: relative;
 }
-.we-do-desc {
+.what-we-do__desc {
   position: absolute;
   bottom: 0;
   width: 100%;

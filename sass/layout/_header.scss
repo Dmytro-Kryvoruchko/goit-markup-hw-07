@@ -1,4 +1,4 @@
-.header__logo {
+.logo {
   margin-right: 92px;
   font-family: var(--secondary-font);
   font-style: normal;
@@ -35,10 +35,10 @@
   display: flex;
   align-items: center;
 }
-.menu-item + .menu-item {
+.menu__item + .menu__item {
   margin-left: 50px;
 }
-.menu-link {
+.menu__link {
   display: block;
   position: relative;
   padding: 32px 0;
@@ -57,7 +57,7 @@
   }
 }
 
-.menu-link.current::after {
+.menu__link.current::after {
   content: '';
   display: block;
   bottom: -1px;
@@ -73,18 +73,18 @@
 .current {
   color: var(--accent-color);
 }
-.contacts-list {
+.contacts {
   display: flex;
   margin-left: auto;
 }
-.contacts-item {
+.contacts__item {
   display: flex;
   align-items: center;
 }
-.contacts-item + .contacts-item {
+.contacts__item + .contacts__item {
   margin-left: 50px;
 }
-.contacts-link {
+.contacts__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -100,7 +100,7 @@
   }
 }
 
-.icon-mail {
+.link__icon-mail {
   margin-right: 10px;
   order: -1;
 
@@ -108,15 +108,15 @@
   transition: fill var(--transition);
 }
 
-.icon-smartphone {
+.link__icon-smartphone {
   margin-right: 10px;
   order: -1;
 
   fill: currentColor;
   transition: fill var(--transition);
 
-  .contacts-link:hover &,
-  .contacts-link:focus & {
+  .contacts__link:hover &,
+  .contacts__link:focus & {
     fill: var(--accent-color);
   }
 }
