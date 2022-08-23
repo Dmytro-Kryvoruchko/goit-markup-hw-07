@@ -339,7 +339,7 @@ button {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.logo-header {
+.header__logo {
   margin-right: 92px;
   font-family: var(--secondary-font);
   font-style: normal;
@@ -350,7 +350,7 @@ button {
   color: var(--logo-color);
 }
 
-.logo-span {
+.logo__span {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
@@ -364,7 +364,7 @@ button {
   border-bottom: 1px solid var(--primary-border-color);
 }
 
-.header-container {
+.page-header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,7 +373,7 @@ button {
           align-items: center;
 }
 
-.main-nav {
+.header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
